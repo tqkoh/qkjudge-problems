@@ -19,7 +19,8 @@ cxx_validator(src="validator.cpp", dependency=["testlib.h"])
 
 ## Output judges.
 # c_judge(src='judge.c')
-cxx_judge(src="checker.cpp", dependency=["testlib.h"], variant=testlib_judge_runner)
+# cxx_judge(src='checker.cpp', dependency=['testlib.h'],
+#           variant=testlib_judge_runner)
 # java_judge(src='Judge.java', encoding='UTF-8', mainclass='Judge')
 # rust_judge(src='judge.rs')
 # go_judge(src='judge.go')
@@ -41,7 +42,7 @@ cxx_judge(src="checker.cpp", dependency=["testlib.h"], variant=testlib_judge_run
 # icpc_merger(input_terminator='0 0\n',
 #            output_replace=casenum_replace('Case 1', 'Case {0}'))
 # gcj_merger(output_replace=casenum_replace('Case 1', 'Case {0}'))
-id = "2"
+id = "0"
 # merged_testset(name=id + '_Merged', input_pattern='*.in')
 # subtask_testset(name='All', score=100, input_patterns=['*'])
 # precisely scored by judge program like Jiyukenkyu (KUPC 2013)
