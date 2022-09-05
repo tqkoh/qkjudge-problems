@@ -1,0 +1,9 @@
+{
+	"id": "next_shift",
+	"title": "Next Shift",
+	"writer": "tqk",
+	"point": 100,
+	"timeLimit": 2.0,
+	"memoryLimit": 1024,
+	"flag": "CPCTF{not_n1but4n54ku_but_n1bunt4n54ku}"
+}

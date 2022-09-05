@@ -1,0 +1,8 @@
+{
+	"id": "addition_construct",
+	"title": "Addition Construct",
+	"writer": "tqk",
+	"timeLimit": 2.0,
+	"memoryLimit": 1024,
+	"flag": "CPCTF{c0n57ruc710n_pr0bl3m5_4r3_h4rd}"
+}
