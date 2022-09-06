@@ -14,6 +14,7 @@ for path in $files; do
 			python3 ../pack.py
 			mkdir $root/dist/$path
 			cp statement.md $root/dist/$path/
+			cp problem.yaml $root/dist/$path/
 			mv "in" $root/dist/$path/in
 			mv "out" $root/dist/$path/out
 			cd ..
@@ -21,11 +22,11 @@ for path in $files; do
 	fi
 done
 
-# cd dist
-# rm -rf .git
-# git init
-# git checkout -b master
-# git add -A
-# git commit -m 'deploy'
-# git push -f git@github.com:tqkoh/qkproblems.git master:dist
-# cd ..
+cd dist
+rm -rf .git
+git init
+git checkout -b master
+git add -A
+git commit -m 'deploy'
+git push -f git@github.com:tqkoh/qkproblems.git master:dist
+cd ..
