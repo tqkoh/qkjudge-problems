@@ -3,7 +3,7 @@ name: fetch
 on:
   push:
     branches:
-      - master
+      - dist
   pull_request:
 
 jobs:
