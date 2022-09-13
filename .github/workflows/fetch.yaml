@@ -1,0 +1,22 @@
+name: fetch
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: qkjudge fetch
+        env:
+          QKJUDGE_USERNAME: ${{ secrets.QKJUDGE_USERNAME }}
+          QKJUDGE_PASSWORD: ${{ secrets.QKJUDGE_PASSWORD }}
+        run: |
+          'curl -X POST -H "Content-Type: application/json" -d "{\"username\":\"${QKJUDGE_USERNAME}\",\"password\":\"${QKJUDGE_PASSWORD}\"}" https://tqk.trap.show/qkjudge/user/login'
+          'curl -X POST -H "Content-Type: application/json" -d "{\"username\":\"${QKJUDGE_USERNAME}\",\"password\":\"${QKJUDGE_PASSWORD}\"}" https://tqk.trap.show/qkjudge/fetch/problems'

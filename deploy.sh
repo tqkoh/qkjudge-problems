@@ -2,6 +2,8 @@ rm -rf ./dist
 mkdir dist
 root=$(pwd)
 
+cp qkjudge.yaml $root/dist/qkjudge.yaml
+
 files="*"
 for path in $files; do
 	if [ -d "./$path" ]; then
