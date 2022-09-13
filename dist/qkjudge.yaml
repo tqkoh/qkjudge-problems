@@ -1,4 +1,7 @@
 problems:
   - a_plus_b
-  - addition_construct
   - nkuths_plus_notation
+  - sum_of_max
+  - lower_bounds_on_divisors
+  - next_shift
+  - weirdo
