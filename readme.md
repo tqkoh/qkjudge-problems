@@ -8,6 +8,8 @@
 ### 問題追加/更新について メモ
 
 - dist ブランチを更新すると自動で更新される
+  - actions でやってる(curl で `POST /user/login` -> `POST /fetch/problems` 叩く ログインに必要な情報は secrets に入れてる)けど webhook でできる? 後でやる
+  - https://docs.github.com/ja/developers/webhooks-and-events/webhooks/securing-your-webhooks
 - `qkjudge.yaml` に問題のパスのリストを書く
 - `{problem}/problem.yaml` にタイトルなどの情報書く
 - `{problem}/in/{nanka}.in` , `{problem}/out/{nanka}.in` にテストケースを入れる
