@@ -1,3 +1,6 @@
 .vscode
 .DS_Store
 */rime-out
+
+cookie.txt
+*.cookie.txt
