@@ -2,6 +2,7 @@ rm -rf ./dist
 mkdir dist
 root=$(pwd)
 
+cp .github dist/ -r
 cp qkjudge.yaml $root/dist/qkjudge.yaml
 
 files="*"
