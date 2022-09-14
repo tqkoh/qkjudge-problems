@@ -2,34 +2,15 @@
 
 [QK Judge](https://judge.tqk.blue)
 
-ここは問題 サーバー: [qkjudge](https://github.com/tqkoh/qkjudge) クライアント: [qkjudge-UI](https://github.com/tqkoh/qkjudge-UI)
-
+サーバー: [qkjudge](https://github.com/tqkoh/qkjudge)<br>
+クライアント: [qkjudge-UI](https://github.com/tqkoh/qkjudge-UI)<br>
+問題(:koko:): [qkjudge-problems](https://github.com/tqkoh/qkjudge-problems)<br>
 
 ### 問題追加/更新について メモ
 
-- dist ブランチを更新すると自動で更新される
-  - actions でやってる(curl で `POST /user/login` -> `POST /fetch/problems` 叩く ログインに必要な情報は secrets に入れてる)けど webhook でできる? 後でやる
-  - https://docs.github.com/ja/developers/webhooks-and-events/webhooks/securing-your-webhooks
+rime を使ってる ディレクトリ構造は大体 CPCTF 式
+
+- dist ブランチを更新すると webhook がサーバーに飛び自動で更新される
 - `qkjudge.yaml` に問題のパスのリストを書く
 - `{problem}/problem.yaml` にタイトルなどの情報書く
 - `{problem}/in/{nanka}.in` , `{problem}/out/{nanka}.in` にテストケースを入れる
-
-rime を使ってる ディレクトリ構造は CPCTF 式 手元の操作↓
-
-問題更新 たしかこんな感じ:
-
-同じ感じで statement, generator, validator, solution などを書く<br>
-rime test でテストケースが生成される<br>
-
-```
-{problem}$ rime test
-{problem}$ python3 ../pack.py
-```
-
-デプロイ
-
-```
-$ source deploy.sh
-```
-
-なぜか用意されてるスクリプトが python と bash ...
