@@ -2,6 +2,5 @@ problems:
   - a_plus_b
   - nkuths_plus_notation
   - sum_of_max
-  - lower_bound_on_divisors
-  - next_shift
   - weirdo
+  - fizzbuzz
