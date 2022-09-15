@@ -16,9 +16,9 @@ int main(int argc, char* argv[]) {
 	};
 	// small
 	// random
-	random(4, "01_random_\%02d.in");
+	random(1, "01_random_\%02d.in");
 	// max
-	random(MAX_N - 10, "02_max_\%02d.in");
+	random(1, "02_max_\%02d.in", MAX_N);
 
 	return 0;
 }
