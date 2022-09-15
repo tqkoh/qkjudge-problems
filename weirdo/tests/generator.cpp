@@ -19,14 +19,24 @@ int main(int argc, char* argv[]) {
 			fout.close();
 		}
 	};
+	// // small
+	// random(14, "01_small_\%02d.in", MIN_N, SMALL_N);
+	// // medium
+	// random(3, "02_medium_\%02d.in", SMALL_N, LARGE_N);
+	// // large
+	// random(3, "03_large_\%02d.in", LARGE_N, MAX_N);
+	// // max
+	// random(5, "04_max_\%02d.in", MAX_N - 2, MAX_N);
+
 	// small
-	random(14, "01_small_\%02d.in", MIN_N, SMALL_N);
+	random(13, "01_small_\%02d.in", MIN_N, SMALL_N);
 	// medium
 	random(3, "02_medium_\%02d.in", SMALL_N, LARGE_N);
 	// large
-	random(3, "03_large_\%02d.in", LARGE_N, MAX_N);
+	random(1, "03_large_\%02d.in", LARGE_N, MAX_N);
 	// max
-	random(5, "04_max_\%02d.in", MAX_N - 2, MAX_N);
+	random(3, "04_max_\%02d.in", MAX_N - 2, MAX_N);
+
 	// hand
 	{
 		ofstream fout("05_hand_00.in");
